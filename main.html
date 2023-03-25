@@ -8,39 +8,26 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-	
-
-	<h1>Feedback Form</h1>
-	
-	<form>
-		
-		<label for="name">Name</label>
-		<input type="text" id="name" name="name" placeholder="name" minlength="3" maxlength="50" required>
-		<br><br>
-		
-		<label for="portfolio">Portfolio</label>
-		<input type="url" id="portfolio" name="portfolio" placeholder="url">
-		<br><br>
-		
-		<label for="favcolor">Favorite color</label>
-	    <input type="color" id="favcolor" name="favcolor" value="#ff0000">
-		<br><br>
-		
-		<label for="likeness">likeness</label>
-		<input type="range" id="likeness" min="1" max="100">
-		<br><br>
-
-		<input type="submit" value="Submit"> 
-		
-<!-- 		<label for="submit"></label>
-		<input type="submit">
-
-	<label class="todo-label" for="new-todo">What do you want to do today?</label>
-    <input type="text" id="new-todo" class="todo-input"
-        placeholder="buy milk"> -->
-
-				
-	</form>
+	<div>
+		<h1>
+			Feedback Form
+		</h1>
+	</div>
+	<div>
+		<form method="post">
+			<label for="name">Name</label>
+			<input type="text" id="name" minlength="3" maxlength="50" required><br>
+            <label for="portfolio">Portfolio</label>
+			<input type="url" id="portfolio" required><br>
+			<label for="favColor">favColor</label>
+			<input type="color" id="favColor"><br>
+			<label for="likeness">Likeness</label>
+			<input type="range" id="likeness" min="1" max="100"><br>
+			<button type="submit" id="btn">Submit</button>
+			<button type="reset" id ="reset">Reset form</button>
+		</form>
+			
+	</div>
     <script type="text/javascript" src="./script.js">
 </script>
 
